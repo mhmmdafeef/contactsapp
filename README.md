@@ -39,11 +39,15 @@ Maven (for managing dependencies)
 
 1)Create a new PostgreSQL database.
 
-2)Execute the database scripts:
+2)Execute the database scripts
 
-3) Navigate to the contactsapp\contactsappbackend\src\main\resources\scripts.sql"l file.
-4) Run the script in PostgreSQL to create the necessary tables.
-5) Insert sample data  
+3)Navigate to the contactsapp\contactsappbackend\src\main\resources\scripts.sql"l file.
+
+4)Run the script in PostgreSQL to create the necessary tables.
+
+5)Insert sample data  
+
+6)Make Sure database properties are added correctly in application.properties of backend application
 
 
 3️⃣ Start the Backend
