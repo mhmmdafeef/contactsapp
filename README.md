@@ -59,3 +59,7 @@ Maven (for managing dependencies)
 3)Run the backend service: mvn spring-boot:run
 
 The backend will be available at http://localhost:8080.
+
+Deployment on AWS
+
+Our application architecture features a static website hosted on AWS S3 that interacts seamlessly with a backend API deployed within a Docker container running on an EC2 instance. This EC2 instance is provisioned inside a dedicated Virtual Private Cloud (VPC) that is segmented into public and private subnets. The frontend, served from S3, is publicly accessible and can optionally be accelerated using CloudFront, while the backend API is deployed on an EC2 instance with a security group configured to allow only necessary inbound traffic. The backend container communicates with an Amazon RDS PostgreSQL database hosted in a private subnet, ensuring that the database remains isolated from direct internet access. The VPC setup—with its defined routing tables, network access control lists, and properly configured subnets—ensures secure, efficient communication between the public-facing components and the protected backend and database layers, offering both scalability and robust security for your application.
