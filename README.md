@@ -1,4 +1,4 @@
-This project follows a separated architecture for the frontend and backend:
+
 
 Frontend: Built with Next.js
 
